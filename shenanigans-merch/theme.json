@@ -1,0 +1,131 @@
+{
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1320px",
+      "wideSize": "1440px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "paper",
+          "name": "Paper",
+          "color": "#eee6d3"
+        },
+        {
+          "slug": "ink",
+          "name": "Ink",
+          "color": "#22211e"
+        },
+        {
+          "slug": "red",
+          "name": "Record red",
+          "color": "#ad3a2d"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "slug": "display",
+          "name": "Shenanigans Condensed",
+          "fontFamily": "'Shenanigans Condensed', Impact, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Shenanigans Condensed",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "file:./assets/condensed.otf"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "body",
+          "name": "Typewriter",
+          "fontFamily": "'Courier New', Courier, monospace"
+        }
+      ]
+    },
+    "spacing": {
+      "units": [
+        "px",
+        "rem",
+        "vw",
+        "%"
+      ],
+      "blockGap": true
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|paper",
+      "text": "var:preset|color|ink"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "fontSize": "1rem",
+      "lineHeight": "1.6"
+    },
+    "spacing": {
+      "padding": {
+        "left": "clamp(16px, 3vw, 48px)",
+        "right": "clamp(16px, 3vw, 48px)"
+      }
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|display",
+          "fontWeight": "400",
+          "lineHeight": "0.95",
+          "textTransform": "uppercase"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var:preset|color|ink"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var:preset|color|red",
+          "text": "#fff7e8"
+        },
+        "border": {
+          "radius": "0"
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|display",
+          "fontSize": "1.3rem",
+          "letterSpacing": "0.12em",
+          "textTransform": "uppercase"
+        },
+        "spacing": {
+          "padding": {
+            "top": "16px",
+            "bottom": "16px",
+            "left": "24px",
+            "right": "24px"
+          }
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Shop header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Shop footer",
+      "area": "footer"
+    }
+  ]
+}
