@@ -1,0 +1,7 @@
+"Type","SKU","Name","Published","Visibility in catalog","Short description","Description","In stock?","Regular price","Allow customer reviews?","Images","Parent","Attribute 1 name","Attribute 1 value(s)","Attribute 1 visible","Attribute 1 global","Attribute 1 default"
+"variable","SH-TEE","The Shenanigans Tee.","-1","visible","A little Shenanigans for your everyday wardrobe.","Black T-shirt with the Shenanigans record print. Demo artwork, price and sizes, to confirm before publishing.","1","","0","https://raw.githubusercontent.com/jamiemarsland/shenanigans-merch/590f713156c4f6eb750522c803cac43ebe930ad7/shenanigans-merch/assets/demo-shirt.jpg","","Size","S, M, L, XL, XXL","1","0","M"
+"variation","SH-TEE-S","The Shenanigans Tee. - S","1","visible","","","1","25","0","","SH-TEE","Size","S","1","0",""
+"variation","SH-TEE-M","The Shenanigans Tee. - M","1","visible","","","1","25","0","","SH-TEE","Size","M","1","0",""
+"variation","SH-TEE-L","The Shenanigans Tee. - L","1","visible","","","1","25","0","","SH-TEE","Size","L","1","0",""
+"variation","SH-TEE-XL","The Shenanigans Tee. - XL","1","visible","","","1","25","0","","SH-TEE","Size","XL","1","0",""
+"variation","SH-TEE-XXL","The Shenanigans Tee. - XXL","1","visible","","","1","25","0","","SH-TEE","Size","XXL","1","0",""
