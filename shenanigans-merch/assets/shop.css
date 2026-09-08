@@ -3,7 +3,8 @@
 :root{--sh-ink:#22211e;--sh-red:#ad3a2d;--sh-paper:#eee6d3}
 body,.editor-styles-wrapper{background-color:var(--sh-paper);background-image:url('distressed-paper.jpg');background-size:1000px auto;color:var(--sh-ink)}
 *{box-sizing:border-box}
-.wp-site-blocks{max-width:1536px;margin:auto}
+body{margin:0}
+.wp-site-blocks{width:100%;max-width:1536px;min-width:0;margin:auto}
 a{text-underline-offset:4px}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--sh-red);outline-offset:4px}
 .sh-header{padding:20px 0;border-bottom:1px solid #22211e80;gap:24px}
@@ -15,10 +16,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 .sh-current,.sh-current a{color:var(--sh-red)!important}
 .sh-product{padding:32px 0 12px}
 .sh-product .woocommerce-breadcrumb{font-size:14px;margin-bottom:26px}
-.sh-product-columns{gap:clamp(28px,4vw,64px);align-items:flex-start}
-.sh-product-info{min-width:0}
+.sh-product-columns{display:grid!important;grid-template-columns:minmax(0,56fr) minmax(0,44fr);gap:clamp(28px,4vw,64px);align-items:start}
+.sh-product-columns>.wp-block-column{min-width:0;max-width:100%}
+.sh-header,.sh-header-right,.sh-footer{min-width:0;max-width:100%}
+.sh-kicker{overflow-wrap:anywhere}
+.sh-product-info{min-width:0;container-type:inline-size}
 .sh-kicker{font-family:'Shenanigans Condensed',Impact,sans-serif;font-size:17px;letter-spacing:2.5px;margin-top:0;margin-bottom:16px}
-.sh-product-title{font-family:'Shenanigans Condensed',Impact,sans-serif!important;font-weight:400!important;font-size:clamp(64px,7.5vw,116px)!important;line-height:.98!important;text-transform:uppercase;margin:12px 0 22px;overflow-wrap:normal}
+.sh-product-title{font-family:'Shenanigans Condensed',Impact,sans-serif!important;font-weight:400!important;font-size:clamp(24px,4vw,64px)!important;font-size:clamp(24px,13cqw,84px)!important;line-height:.98!important;text-transform:uppercase;margin:12px 0 22px;overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important;letter-spacing:normal;max-width:100%}
 .sh-product .wp-block-woocommerce-product-price{font-size:28px;margin:16px 0 30px}
 .sh-product .wp-block-woocommerce-product-summary{font-size:16px;line-height:1.7;margin-bottom:30px}
 .sh-product-media .woocommerce-product-gallery{float:none!important;width:100%!important}
@@ -59,5 +63,5 @@ button:disabled,.single_add_to_cart_button.disabled{opacity:.5;cursor:not-allowe
 .woocommerce ul.products li.product h2{font-family:'Shenanigans Condensed',Impact,sans-serif;font-size:32px!important}
 .woocommerce ul.products li.product .price{color:var(--sh-ink)}
 .woocommerce-message,.woocommerce-info{border-top-color:var(--sh-red)}
-@media(max-width:781px){.sh-product-columns{display:block}.sh-product-info{margin-top:30px}.sh-header{padding:16px 0}.sh-wordmark{font-size:32px}.sh-header-right{gap:12px}.sh-product-title{font-size:68px!important}.sh-footer{display:block}.sh-footer p+p{margin-top:14px}}
+@media(max-width:781px){.sh-product-columns{grid-template-columns:minmax(0,1fr)}.sh-product-info{margin-top:30px}.sh-header{padding:16px 0}.sh-wordmark{font-size:32px}.sh-header-right{gap:12px}.sh-footer{display:block}.sh-footer p+p{margin-top:14px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
